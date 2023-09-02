@@ -2,16 +2,40 @@
 
 void LinearEquation::Roots()
 {
+	double a, b, c, x;
+	cout << "Hi! This program will help you find the roots of the linear equation.\n";
+	cout << "Fill below the coefficients of the equation type ax+b=c, provided that \"a\" doesn't equal 0\n\n";
+	do
+	{
+		cout << "Input value \"a\"(can't be 0): ";
+		cin >> a;
+		if (a != 0)break;
+		cout << "Invalid value!!!\n\n";
 
+	} while (a == 0);
+	cout << "Input value \"b\": ";
+	cin >> b;
+	cout << "Input value \"c\": ";
+	cin >> c;
+	cout << "\n";
+	x = (c - b) / a;
+	system("cls");
+	cout << "x=" << x << endl;
 }
 
 void QuadraticEquation::Roots()
 {
 	double a, b, c, D, x, x1, x2;
 	cout << "Hi! This program will help you find the roots of the square equation.\n";
-	cout << "Fill below the coefficients of the equation type ax^2+bx+c=0, provided that \"à\" doesn't equal 0\n\n";
-	cout << "Input value \"a\": ";
-	cin >> a;
+	cout << "Fill below the coefficients of the equation type ax^2+bx+c=0, provided that \"a\" doesn't equal 0\n\n";
+	do
+	{
+		cout << "Input value \"a\"(can't be 0): ";
+		cin >> a;
+		if (a != 0)break;
+		cout << "Invalid value!!!\n\n";
+
+	} while (a == 0);
 	cout << "Input value \"b\": ";
 	cin >> b;
 	cout << "Input value \"c\": ";
